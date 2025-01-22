@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RequestServiceController">
+   <children>
+      <Label alignment="CENTER" layoutX="225.0" layoutY="31.0" prefHeight="27.0" prefWidth="386.0" text="Request Service">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="492.0" prefWidth="224.0" style="-fx-background-color: grey;">
+         <children>
+            <Button layoutX="62.0" layoutY="396.0" mnemonicParsing="false" onAction="#switchToMainScene" prefHeight="38.0" prefWidth="90.0" text="Log Out" />
+            <Button layoutX="15.0" layoutY="106.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="38.0" prefWidth="194.0" style="-fx-background-color: pink;" text="Manage Account" />
+            <Button layoutX="15.0" layoutY="207.0" mnemonicParsing="false" onAction="#switchToBrowseServices" prefHeight="38.0" prefWidth="194.0" style="-fx-background-color: pink;" text="Browse Services" />
+            <Button layoutX="15.0" layoutY="306.0" mnemonicParsing="false" onAction="#switchToViewAppointment" prefHeight="38.0" prefWidth="194.0" style="-fx-background-color: pink;" text="View Appointments" />
+         </children>
+      </AnchorPane>
+      <RadioButton layoutX="235.0" layoutY="122.0" mnemonicParsing="false" text="Electrical repairs">
+         <toggleGroup>
+            <ToggleGroup />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="359.0" layoutY="122.0" mnemonicParsing="false" text="Cleaning">
+         <toggleGroup>
+            <ToggleGroup />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="439.0" layoutY="122.0" mnemonicParsing="false" text="Carpentry">
+         <toggleGroup>
+            <ToggleGroup />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="530.0" layoutY="122.0" mnemonicParsing="false" text="HVAC">
+         <toggleGroup>
+            <ToggleGroup />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="235.0" layoutY="162.0" mnemonicParsing="false" text="Gardening">
+         <toggleGroup>
+            <ToggleGroup />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="410.0" layoutY="162.0" mnemonicParsing="false" text="Painting">
+         <toggleGroup>
+            <ToggleGroup />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="492.0" layoutY="162.0" mnemonicParsing="false" text="Security system">
+         <toggleGroup>
+            <ToggleGroup />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="323.0" layoutY="162.0" mnemonicParsing="false" text="Plumbing">
+         <toggleGroup>
+            <ToggleGroup />
+         </toggleGroup></RadioButton>
+      <Label alignment="CENTER" layoutX="223.0" layoutY="66.0" prefHeight="38.0" prefWidth="386.0" text="Select">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="235.0" layoutY="237.0" promptText="Enter a date" />
+      <Label layoutX="247.0" layoutY="204.0" prefHeight="26.0" prefWidth="53.0" text="Set date" />
+      <Label layoutX="443.0" layoutY="209.0" prefHeight="18.0" prefWidth="107.0" text="Set time" />
+      <TextField layoutX="438.0" layoutY="237.0" prefHeight="26.0" prefWidth="158.0" promptText="Enter time from 9-5" />
+      <Label layoutX="247.0" layoutY="282.0" prefHeight="22.0" prefWidth="117.0" text="Payment Method">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="239.0" layoutY="352.0" prefHeight="18.0" prefWidth="126.0" text="Additional Information" />
+      <TextField layoutX="240.0" layoutY="370.0" prefHeight="62.0" prefWidth="367.0" promptText="Additional note for the company or staff" />
+      <Button layoutX="375.0" layoutY="443.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: purple;" text="Request" textFill="WHITE" />
+      <RadioButton layoutX="246.0" layoutY="312.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="74.0" text="Card">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="326.0" layoutY="312.0" mnemonicParsing="false" text="PayPal">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup />
+         </toggleGroup>
+      </RadioButton>
+   </children>
+</AnchorPane>
